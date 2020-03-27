@@ -9,9 +9,7 @@ public class OfflineExercises {
 		input = "  " + input + "  ";
 		for (int i = 0; i < length + 1; i++) {
 			amIAm = input.substring(i, i + 4);
-			System.out.println(amIAm);
 			if (amIAm.equalsIgnoreCase(" am ")) {
-				System.out.println("found you");
 				counter++;
 			}
 		}
@@ -96,7 +94,6 @@ public class OfflineExercises {
 			if (addSpace.substring(i, i + 1).equals(" ")) {
 				space2 = i;
 				isolatedNumber = addSpace.substring(space1 + 1, space2);
-				System.out.println(isolatedNumber);
 				for (int j = 0; j < isolatedNumber.length(); j++) {
 					int integerValue = Integer.parseInt(isolatedNumber.substring(j, j + 1));
 					currentSum += integerValue;
